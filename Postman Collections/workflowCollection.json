@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "bd822b18-99cb-4476-ab57-fc13208aa804",
+		"name": "workFlowAppMicrosoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "c6ff60e9-fa30-4cb1-a139-69319308dfaf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n       \"type\":\"message\",\n       \"attachments\":[\n          {\n             \"contentType\":\"application/vnd.microsoft.card.adaptive\",\n             \"contentUrl\":null,\n             \"content\":{\n                \"$schema\":\"http://adaptivecards.io/schemas/adaptive-card.json\",\n                \"type\":\"AdaptiveCard\",\n                \"version\":\"1.2\",\n                \"body\":[\n                    {\n                    \"type\": \"TextBlock\",\n                    \"text\": \"Monitor dev.rdsproxydeletionmonitortest on Collection rdsproxydeletion with 1 requests and 1 tests ran successfully\"\n                    }\n                ]\n             }\n          }\n       ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-178.westus.logic.azure.com:443/workflows/ce3a9d16cc9b441ca4ff48ba927467c9/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5wM_I-GTxS_2Nm-2LOm41akuyRTmPRTgx4DfkE8VITk",
+					"protocol": "https",
+					"host": [
+						"prod-178",
+						"westus",
+						"logic",
+						"azure",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"workflows",
+						"ce3a9d16cc9b441ca4ff48ba927467c9",
+						"triggers",
+						"manual",
+						"paths",
+						"invoke"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2016-06-01"
+						},
+						{
+							"key": "sp",
+							"value": "%2Ftriggers%2Fmanual%2Frun"
+						},
+						{
+							"key": "sv",
+							"value": "1.0"
+						},
+						{
+							"key": "sig",
+							"value": "5wM_I-GTxS_2Nm-2LOm41akuyRTmPRTgx4DfkE8VITk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "c9c9070b-935f-49a2-b848-db762f9c1022",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "www.google.com"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "da6cfd5a-28b2-44e5-8b3c-104184180082",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prod-178.westus.logic.azure.com:443/workflows/ce3a9d16cc9b441ca4ff48ba927467c9/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5wM_I-GTxS_2Nm-2LOm41akuyRTmPRTgx4DfkE8VITk",
+					"protocol": "https",
+					"host": [
+						"prod-178",
+						"westus",
+						"logic",
+						"azure",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"workflows",
+						"ce3a9d16cc9b441ca4ff48ba927467c9",
+						"triggers",
+						"manual",
+						"paths",
+						"invoke"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2016-06-01"
+						},
+						{
+							"key": "sp",
+							"value": "%2Ftriggers%2Fmanual%2Frun"
+						},
+						{
+							"key": "sv",
+							"value": "1.0"
+						},
+						{
+							"key": "sig",
+							"value": "5wM_I-GTxS_2Nm-2LOm41akuyRTmPRTgx4DfkE8VITk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
